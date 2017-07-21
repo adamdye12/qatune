@@ -16,7 +16,6 @@ public class CD {
 	private String albumName;
 
 	public CD() {
-
 	}
 
 	public CD(String artistName, String genre, String albumName) {

@@ -57,8 +57,16 @@ public class CDServiceDBImpl implements CDService {
         return "{\"message\": \"cd sucessfully deleted\"}";
     }
 
+    @Override
+    public String getCD(Long id) {
+        Query query = manager.createQuery("Select m FROM CD m where m.id=:id").setParameter("id",id);
+        Collection<CD> cds = (Collection<CD>) query.getResultList();
+        return util.getJSONForObject(cds);
+    }
+
     private CD findCD(Long id) {
         return manager.find(CD.class, id);
     }
+
 
 }

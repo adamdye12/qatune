@@ -24,6 +24,12 @@ public class CDEndpoint {
 		return service.getAllCDs();
 	}
 
+	@Path("/json/{id}")
+	@GET
+	@Produces({ "application/json" })
+	public String getCD(@PathParam("id") Long id) {
+		return service.getCD(id);
+	}
 	@Path("/json")
 	@POST
 	@Produces({ "application/json" })

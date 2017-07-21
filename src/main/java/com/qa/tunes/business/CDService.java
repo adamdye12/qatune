@@ -8,4 +8,6 @@ public interface CDService {
 	String updateCD(Long id, String cd);
 
 	String deleteCD(Long id);
+
+	String getCD(Long id);
 }
