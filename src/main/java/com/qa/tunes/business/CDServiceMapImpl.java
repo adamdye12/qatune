@@ -1,32 +1,32 @@
-package com.qa.cinema.business;
+package com.qa.tunes.business;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Alternative;
 
 @ApplicationScoped
 @Alternative
-public class MovieServiceMapImpl implements MovieService {
+public class CDServiceMapImpl implements CDService {
 
 	@Override
-	public String getAllMovies() {
+	public String getAllCDs() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String createMovie(String movie) {
+	public String createCD(String cd) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String updateMovie(Long id, String movie) {
+	public String updateCD(Long id, String cd) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public String deleteMovie(Long id) {
+	public String deleteCD(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

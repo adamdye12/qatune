@@ -1,4 +1,4 @@
-package com.qa.cinema.util;
+package com.qa.tunes.util;
 
 import com.google.gson.Gson;
 

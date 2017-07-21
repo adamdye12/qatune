@@ -1,4 +1,4 @@
-package com.qa.cinema.persistence;
+package com.qa.tunes.persistence;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,35 +6,38 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Movie {
+public class CD {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	private String title;
+	private String artistName;
 	private String genre;
-	private String published;
+	private String albumName;
 
-	public Movie() {
+	public CD() {
 
 	}
 
-	public Movie(String title, String genre, String published) {
-		this.title = title;
+	public CD(String artistName, String genre, String albumName) {
+		this.artistName = artistName;
 		this.genre = genre;
-		this.published = published;
+		this.albumName = albumName;
 	}
 
 	public Long getId() {
 		return id;
 	}
-
-	public String getTitle() {
-		return title;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+	public String getTitle() {
+		return artistName;
+	}
+
+	public void setTitle(String artistName) {
+		this.artistName = artistName;
 	}
 
 	public String getGenre() {
@@ -46,11 +49,11 @@ public class Movie {
 	}
 
 	public String getPublished() {
-		return published;
+		return albumName;
 	}
 
-	public void setPublished(String published) {
-		this.published = published;
+	public void setPublished(String albumName) {
+		this.albumName = albumName;
 	}
 
 }

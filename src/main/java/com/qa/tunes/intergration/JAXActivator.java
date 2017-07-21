@@ -1,4 +1,4 @@
-package com.qa.cinema.intergration;
+package com.qa.tunes.intergration;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
